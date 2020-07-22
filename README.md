@@ -15,12 +15,14 @@
 
 ## Project Motivation <a name="motivation"></a>
 
-In this project, I completed an app that classifies messages sent during disasters into different categories in order to help the job of disaster response organizations.
+In this project, I completed an app that classifies messages sent during disasters into different categories in order to help the job of disaster response organizations
 
 ## File Descriptions <a name="files"></a>
 
 - data/process_data.py: A data processing pipeline that prepares the data and stores it in a SQLite database
 - models/train_classifier.py: A machine learning pipeline that does preprocessing of the data and then trains, tunes and stores the classifier
+- ETL Pipeline Preparation.ipynb: A jupyter notebook used to develop the data processing pipeline
+- ML Pipeline Preparation.ipynb: A jupyter notebook used to develop the machine learning pipeline
 
 ## Licensing, Authors, Acknowledgements <a name="licensing"></a>
-Credit to Figure Eight for the dataset and Udacity for the project outline, instructions and templates.
+Credit to Figure Eight for the dataset and Udacity for the project outline, instructions and templates
