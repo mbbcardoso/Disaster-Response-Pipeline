@@ -4,7 +4,8 @@
 1. [Requirements](#requirements)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
-4. [Licensing, Authors, and Acknowledgements](#licensing)
+4. [Instructions](#instructions)
+5. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Requirements <a name="requirements"></a>
 - pandas 0.23.3
@@ -23,6 +24,18 @@ In this project, I completed an app that classifies messages sent during disaste
 - models/train_classifier.py: A machine learning pipeline that does preprocessing of the data and then trains, tunes and stores the classifier
 - ETL Pipeline Preparation.ipynb: A jupyter notebook used to develop the data processing pipeline
 - ML Pipeline Preparation.ipynb: A jupyter notebook used to develop the machine learning pipeline
+
+## Instructions <a name="instructions"></a>
+- Run the data processing pipeline
+
+`python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+- Run the machine learning pipeline
+ 
+ `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+- Run the web app.
+
+`python run.py`
+- Go to http://0.0.0.0:3001/
 
 ## Licensing, Authors, Acknowledgements <a name="licensing"></a>
 Credit to Figure Eight for the dataset and Udacity for the project outline, instructions and templates
